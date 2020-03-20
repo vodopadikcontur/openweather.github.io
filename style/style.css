@@ -1,0 +1,74 @@
+body {
+  background: #649173;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #DBD5A4, #649173);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #DBD5A4, #649173);
+  font-family: 'Open Sans Condensed', sans-serif;
+}
+.h1 {
+  font-size: 50px;
+  text-align: center;
+  color: white;
+}
+.main {
+  width: 90%;
+  margin: auto;
+}
+.day {
+  display: inline-block;
+  text-align: center;
+  margin-right: 15px;
+  width: 18%;
+  border-radius: 3px;
+  background-color: #fff;
+  transition: 0.3s all;
+  background-color: #ffffff2e;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  border-radius: 25px;
+}
+.day > img {
+  width: 50%;
+}
+.day:hover {
+  box-shadow: 0 5px 10px;
+}
+.date {
+  color: black;
+}
+.text-desc {
+  text-align: center;
+}
+.text-desc p {
+  font-size: 50px;
+  text-align: center;
+  color: white;
+}
+.text-desc .btn {
+  cursor: pointer;
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+  margin: 2px 0 20px;
+  /* невидимая граница (понадобится для цвета при наведении/фокусе) */
+  border: solid 1px transparent;
+  border-radius: 4px;
+  /* размер строится из текста и отступов (без width/height) */
+  padding: 0.5em 1em;
+  /* убедитесь, что достаточно контраста! */
+  color: #ffffff;
+  background-color: #22a927;
+}
+
+@media screen and (max-width: 575px) {
+  .day {
+      display: block;
+      width: auto;
+      padding: 15px;
+      margin-top: 10px;
+      margin-bottom: 10px;
+  }
+  .day img {
+    width: 50%;
+  }
+}
